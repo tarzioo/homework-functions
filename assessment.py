@@ -14,6 +14,22 @@
 
 #    If the user does not provide a tax rate it should default to 5% 
 
+def calculate_tax(state, cost_amount, tax = 0.05):
+    """Function takes in three paramters and returns the result. the third parameter
+    is set to a default number based on user input
+
+    Function receives a string and binds it to the state variable. It receives
+    an int or float and binds it to cost_amount. It receives a float number for
+    the tax variable as sets it to a default of 0.05. If state is 'CA' then tax
+    is changed to 0.07. The function computes cost_amount plus cost_amount multiplied
+    by tax and returns the result
+    """
+
+    if state == 'CA':
+        tax = 0.07
+
+    return  cost_amount + cost_amount * tax   
+
 #####################################################################
 # PART TWO
 
@@ -85,7 +101,7 @@ def hometown_greeting(town, first, last):
         print "Hi " + full_name(first, last) + ", we're from the same place!"
 
     else:
-        print "Hi " + full_name(first, last) + ", where are you from"  
+        print "Hi " + full_name(first, last) + ", where are you from?"  
 #
 
 
