@@ -186,7 +186,7 @@ def num_spaces(sentence):
 #    percentage should be optional; if not given, it should
 #    default to 15%.
 
-def total_meal_price(meal_price, tip = 0.015):
+def total_meal_price(meal_price, tip = 0.15):
     """Function receives two floats and returns a new amount. A default parameter
     is set if second parameter does not get set, it default to 0.15
 
@@ -209,6 +209,13 @@ def total_meal_price(meal_price, tip = 0.015):
 #    variables --- sign and parity (whether it's even or odd).
 #    Print sign and parity.
 
+def sign_and_parity(num):
+    """function takes in an integer and returns a list
+
+    """
+
+
+
 
 ################################################################################
 # PART TWO
@@ -227,7 +234,15 @@ def total_meal_price(meal_price, tip = 0.015):
 #    Use the function from #1 to construct the full title for the letter's
 #    greeting.
 
+def write_letter(RECIPIENT_NAME, JOB_TITLE = "Engineer", SENDER_NAME = "from"):
+    """docstring
 
+    """
+    print "Dear %s %s, I think you are amazing! Sincerely, %s" % (JOB_TITLE,
+    RECIPIENT_NAME, SENDER_NAME)
+
+def full_title(RECIPIENT_NAME, JOB_TITLE = "Engineer"):
+    return JOB_TITLE + " " + RECIPIENT_NAME
 #####################################################################
 # END OF PRACTICE: You can ignore everything below.
 
