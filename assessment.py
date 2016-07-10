@@ -113,10 +113,31 @@ def hometown_greeting(town, first, last):
 #    inside of it. The outer function should take ``x``, an integer which
 #    defaults to 1. The inner function should take ``y`` and add ``x`` and ``y`` together.
 
+def increment(x = 1):
+    def add(y):
+        return x + increment()
+
+    return add()
+
 # 2. Call the function ``increment()`` with x = 5. Assign what is returned to a variable name, addfive. Call 
 #    addone with y = 5. Call again with y = 20. 
 
+#addfive = increment(5)
+
+
+
 # 3. Make a function that takes in a number and a list of numbers. It should append
 #    the number to the list of numbers and return the list.
+
+def list_of_numbers(num, list_of):
+    """ Function receives a number and a list and returns number being added to list_of
+
+    Function takes in two parameter. The first paramter is a number and gets binded
+    to num. The second parameter is a list and is binded to list_of. num gets appended
+    the list_of and is returned
+    """
+    list_of.append(num)
+
+    return list_of
 
 #####################################################################
