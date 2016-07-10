@@ -112,6 +112,16 @@ def print_product(num1, num2):
 # 4. Write a function called 'repeat_string' that takes a string and an integer and
 #    prints the string that many times
 
+def repeat_string(str, num):
+    """Function prints string on repeat based on num
+
+    Function takes string and binds to str as a paramter. num is a integer parameter
+    function prints out str parameter and repeats it based on the num parameter
+    nothing is returned
+    """
+
+    print str * num
+
 
 # 5. Write a function called 'print_sign' that takes an integer and prints "Higher
 #    than 0" if higher than zero and "Lower than 0" if lower
