@@ -186,6 +186,18 @@ def num_spaces(sentence):
 #    percentage should be optional; if not given, it should
 #    default to 15%.
 
+def total_meal_price(meal_price, tip = 0.015):
+    """Function receives two floats and returns a new amount. A default parameter
+    is set if second parameter does not get set, it default to 0.15
+
+    Function receives first float parameter and binds it to meal_price. It receives
+    in second float parameter and binds it to tip. If second parameter is not
+    given, it defaults to 0.15. The total of meal_price and tip are calculated
+    and is returned.
+    """
+
+    return meal_price + (meal_price * tip)
+
 
 # 9. Write a function called 'sign_and_parity' that takes an integer as an argument and
 #    returns two pieces of information as strings ---
