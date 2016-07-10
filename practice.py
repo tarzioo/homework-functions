@@ -113,7 +113,7 @@ def print_product(num1, num2):
 #    prints the string that many times
 
 def repeat_string(str, num):
-    """Function prints string on repeat based on num
+    """Function prints string on repeat based on integer 
 
     Function takes string and binds to str as a paramter. num is a integer parameter
     function prints out str parameter and repeats it based on the num parameter
@@ -126,6 +126,23 @@ def repeat_string(str, num):
 # 5. Write a function called 'print_sign' that takes an integer and prints "Higher
 #    than 0" if higher than zero and "Lower than 0" if lower
 #    than zero. If the integer is 0 print "Zero".
+
+def print_sign(num):
+    """Receives integer parameter and prints either 'Higher than 0' or
+    'lower than 0' or 'zero' based on integer
+
+    Function takes in integer paramter and binds it to num. If num is higher
+    than zero then 'Higher than 0' is printed. If num is lower than zero
+    then 'Lower than 0' is printed. Otherwise is num is zero then 'Zero' is
+    printed. Nothin is returned
+    """
+
+    if num > 0:
+        print "Higher than 0"
+    elif num < 0:
+        print "Lower than 0"
+    else:
+        print "Zero"
 
 
 # 6. Write a function called 'is_divisible_by_three' that takes an integer and returns a
