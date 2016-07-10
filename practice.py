@@ -134,7 +134,7 @@ def print_sign(num):
     Function takes in integer paramter and binds it to num. If num is higher
     than zero then 'Higher than 0' is printed. If num is lower than zero
     then 'Lower than 0' is printed. Otherwise is num is zero then 'Zero' is
-    printed. Nothin is returned
+    printed. Nothing is returned
     """
 
     if num > 0:
@@ -148,6 +148,18 @@ def print_sign(num):
 # 6. Write a function called 'is_divisible_by_three' that takes an integer and returns a
 #    boolean (True or False), depending on whether the number
 #    is evenly divisible by 3.
+
+def is_divisible_by_three(num):
+    """Function takes in an integer and returns Boolean based on if it's divisible
+    by 3
+
+    Function takes in an integer and binds it to num. Num is tested to see if it
+    is divisible by 3. If true, True is returned. Otherwise, False is returned.
+    """
+    if num % 3 == 0:
+        return True
+    else:
+        return False
 
 
 # 7. Write a function called 'num_spaces' that takes a sentence as one string and
