@@ -163,7 +163,21 @@ def is_divisible_by_three(num):
 
 
 # 7. Write a function called 'num_spaces' that takes a sentence as one string and
-#    returns the number of spaces.
+#    returns the number of spaces
+
+def num_spaces(sentence):
+    """Function receives string and returns the number of spaces in string
+
+    The function takes in a string for its parameter and binds it to sentence.
+    the amount of spaces in sentence are counted and returned
+    """
+
+    count = 0
+    for char in sentence:
+        if char == " ":
+            count += 1
+
+    return count
 
 
 # 8. Write a function called 'total_meal_price' that can be passed a meal price and a
