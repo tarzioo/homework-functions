@@ -21,11 +21,6 @@
 #        and returns a boolean if the fruit is a "strawberry", "cherry", or 
 #        "blackberry".
 
-#    (b) Write another function, shipping_cost(), which calculates shipping cost
-#        by taking a fruit name as a string, calling the `is_berry()` function 
-#        within the `shipping_cost()` function and returns `0` if ``is_berry()
-#        == True``, and `5` if ``is_berry() == False``.
-
 def is_berry(fruit):
     """Receives string as a parameter and returns a boolen
 
@@ -41,20 +36,86 @@ def is_berry(fruit):
     else:
         return False
 
+#    (b) Write another function, shipping_cost(), which calculates shipping cost
+#        by taking a fruit name as a string, calling the `is_berry()` function 
+#        within the `shipping_cost()` function and returns `0` if ``is_berry()
+#        == True``, and `5` if ``is_berry() == False``.
 
+def shipping_cost(fruit):
+    def is_berry(fruit):
+        fruit_list = ['strawberry', 'cherry', 'blackberry']
 
+        if fruit in fruit_list:
+            return True
+        else:
+            return False
+
+    if is_berry == True:
+        return 0
+    else:
+        return 5
+#
 # 2. (a) Write a function, `is_hometown()`, which takes a town name as a string
 #        and evaluates to `True` if it is your hometown, and `False` otherwise.
+def is_hometown(town):
+    """docstring
+
+    to go here
+    """
+    my_hometown = "oklahoma city"
+
+    if my_hometown == town:
+        return True
+    else:
+        return False
 #
 #    (b) Write a function, `full_name()`, which takes a first and last name as
 #        arguments as strings and returns the concatenation of the two names in
 #        one string.
+
+def full_name(first, last):
+    """docstring
+
+    goes here
+    """
+
+    return first + " " + last
 #
 #    (c) Write a function, `hometown_greeting()`, which takes a home town, a
 #        first name, and a last name as strings as arguments, calls both
 #        `is_hometown()` and `full_name()` and prints "Hi, 'full name here',
 #        we're from the same place!", or "Hi 'full name here', where are you 
 #        from?" depending on what `is_hometown()` evaluates to.
+
+def hometown_greeting(town, first, last):
+    def is_hometown(town):
+    """docstring
+
+    to go here
+    """
+    my_hometown = "oklahoma city"
+
+    if my_hometown == town:
+        return True
+    else:
+        return False
+
+    def full_name(first, last):
+    """docstring
+
+    goes here
+    """
+
+    return first + " " + last  
+    if is_hometown == True:
+        print "Hi" + full_name() + "we're from the same place!"
+
+    else:
+        print "Hi" + full_name() + "where are you from"
+
+#    
+#
+
 
 #####################################################################
 
