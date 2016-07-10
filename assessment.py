@@ -42,15 +42,8 @@ def is_berry(fruit):
 #        == True``, and `5` if ``is_berry() == False``.
 
 def shipping_cost(fruit):
-    def is_berry(fruit):
-        fruit_list = ['strawberry', 'cherry', 'blackberry']
 
-        if fruit in fruit_list:
-            return True
-        else:
-            return False
-
-    if is_berry == True:
+    if is_berry(fruit) == True:
         return 0
     else:
         return 5
@@ -88,32 +81,11 @@ def full_name(first, last):
 #        from?" depending on what `is_hometown()` evaluates to.
 
 def hometown_greeting(town, first, last):
-    def is_hometown(town):
-    """docstring
-
-    to go here
-    """
-    my_hometown = "oklahoma city"
-
-    if my_hometown == town:
-        return True
-    else:
-        return False
-
-    def full_name(first, last):
-    """docstring
-
-    goes here
-    """
-
-    return first + " " + last  
-    if is_hometown == True:
-        print "Hi" + full_name() + "we're from the same place!"
+    if is_hometown(town) == True:
+        print "Hi " + full_name(first, last) + ", we're from the same place!"
 
     else:
-        print "Hi" + full_name() + "where are you from"
-
-#    
+        print "Hi " + full_name(first, last) + ", where are you from"  
 #
 
 
