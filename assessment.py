@@ -58,6 +58,13 @@ def is_berry(fruit):
 #        == True``, and `5` if ``is_berry() == False``.
 
 def shipping_cost(fruit):
+    """Function takes in a string and calls upon is_berry to return a number
+
+    Function takes in a string and binds it to the fruit variable. It calls upon
+    is_berry and looks for its result. If is_berry is returning True, then
+    shipping_cost returns 0. Otherwise if is_berry is returning False, then
+    shipping cost returns 5
+    """
 
     if is_berry(fruit) == True:
         return 0
@@ -67,9 +74,11 @@ def shipping_cost(fruit):
 # 2. (a) Write a function, `is_hometown()`, which takes a town name as a string
 #        and evaluates to `True` if it is your hometown, and `False` otherwise.
 def is_hometown(town):
-    """docstring
+    """Function takes in a string and returns True or False based on eveluation of string"
 
-    to go here
+    Function takes in a string and binds it to the town variable. my_hometown is a
+    variable that is set to equal my home town. If town is equal to my_hometown
+    then True is returned. Otherwise if it is not equal then False is returned
     """
     my_hometown = "oklahoma city"
 
@@ -83,9 +92,11 @@ def is_hometown(town):
 #        one string.
 
 def full_name(first, last):
-    """docstring
+    """Function received two string paramters and returns concatenation of both"
 
-    goes here
+    Function receives first string parameter and binds it to first variable. second
+    string parameter gets binded to last. First and last and concatenated and
+    the result is returned
     """
 
     return first + " " + last
@@ -97,6 +108,17 @@ def full_name(first, last):
 #        from?" depending on what `is_hometown()` evaluates to.
 
 def hometown_greeting(town, first, last):
+    """ Function receives 3 string parameters and calls upon is_hometown and
+    full_name and returns a string
+
+    Function takes in first string parameter and binds it to town. Second string 
+    parameter is binded to first and the 3rd parameter is binded to last. Function 
+    calls upon is_hometown and it is_hometown returns true, then string is printed
+    and calls upon the full_name function and returns a string. If is_hometown
+    is false, a differnt string is returned, also calling upon the full_name
+    function
+    """
+    
     if is_hometown(town) == True:
         print "Hi " + full_name(first, last) + ", we're from the same place!"
 
