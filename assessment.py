@@ -136,6 +136,12 @@ def hometown_greeting(town, first, last):
 #    defaults to 1. The inner function should take ``y`` and add ``x`` and ``y`` together.
 
 def increment(x = 1):
+    """Function takes in a number but defaults to 1. 
+
+    the number from variable x is passed to the
+    add function which takes another number, y, as its parameter. The sum is returned
+    """
+
     def add(y):
         return x + y
     return add
