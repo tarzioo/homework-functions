@@ -137,14 +137,16 @@ def hometown_greeting(town, first, last):
 
 def increment(x = 1):
     def add(y):
-        return x + increment()
-
-    return add()
+        return x + y
+    return add
 
 # 2. Call the function ``increment()`` with x = 5. Assign what is returned to a variable name, addfive. Call 
 #    addone with y = 5. Call again with y = 20. 
 
-#addfive = increment(5)
+addfive = increment(5)
+
+print addfive(5)
+print addfive(20)
 
 
 
