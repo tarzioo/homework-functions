@@ -213,6 +213,22 @@ def sign_and_parity(num):
     """function takes in an integer and returns a list
 
     """
+    num_properties = []
+
+    if num % 2 == 0:
+        num_properties.append("Even")
+    else:
+        num_properties.append("Odd")
+
+
+    if num >= 0:
+        num_properties.append("Positive")
+    else:
+        num_properties.append("Negative")
+
+
+    return num_properties
+
 
 
 
@@ -235,7 +251,7 @@ def sign_and_parity(num):
 #    greeting.
 
 def write_letter(RECIPIENT_NAME, JOB_TITLE = "Engineer", SENDER_NAME = "from"):
-    """docstring
+    """
 
     """
     print "Dear %s %s, I think you are amazing! Sincerely, %s" % (JOB_TITLE,
@@ -243,6 +259,17 @@ def write_letter(RECIPIENT_NAME, JOB_TITLE = "Engineer", SENDER_NAME = "from"):
 
 def full_title(RECIPIENT_NAME, JOB_TITLE = "Engineer"):
     return JOB_TITLE + " " + RECIPIENT_NAME
+
+def add_new_number(new_num, list_of_num):
+    """function takes in number as a list and adds number to list and returns list
+    function has 2 parameters. first parameter is a number and is binded to new_num.
+    the second parameter is a list of numbers binded to list_of_num. new_num is
+    appended to list_of_num and is returned
+    """
+
+    list_of_num.append(new_num)
+
+    return list_of_num  
 #####################################################################
 # END OF PRACTICE: You can ignore everything below.
 
